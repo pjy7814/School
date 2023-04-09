@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="org.tukorea.myweb.mapper.SubscribeMapper">
+ 	
+     <select id="selectAll" resultType="MappingVO">
+ 		select * from mapping
+     </select>
+     
+     <select id="selectAllSubscribe" resultType="SubscribeVO">
+ 		select * from subscribe
+     </select>
+     
+     <select id="selectByid" resultType="SubscribeVO">
+ 		select * from subscribe where subId = any(select subId from mapping where id = #{subId})
+     </select>
+ 	
+ 	 <select id="selectByName" resultType="SubscribeVO">
+ 		select * from subscribe where subName = #{subName}
+     </select>
+     
+     <delete id="deleteSub" parameterType="MappingVO">
+		delete from mapping where id = #{id} AND subId = #{subId}
+     </delete>
+     
+	 <insert id="insertSub"> 
+ 		insert into mapping (subId, id) values (#{subId}, #{id})
+     </insert> 
+     
+     <select id="selectSubById" resultType="SubscribeVO">
+ 		select * from mapping where id = #{id}
+     </select>
+     
+     <update id="updateSub">
+	 	update subscribe set subPrice =#{subPrice} where subId=#{subId}
+    </update>
+    
+	
+</mapper>  

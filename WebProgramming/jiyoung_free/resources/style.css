@@ -1,0 +1,87 @@
+@charset "UTF-8";
+
+header
+	{
+		margin:20px 10px 40px 10px;
+		font-family:"Freestyle Script", "Mistral";
+		font-size:60px;
+		text-shadow:3px 3px 8px gray;
+		text-align:center;
+	}
+	h2{
+		text-align:center;
+		font-family:'BMJUA';
+		font-size:30px;
+	}
+	body{
+		color: black;
+		font-family: '돋움', '궁서체', '고딕';
+	}
+	div {
+		margin-left: auto;
+		margin-right: auto;
+		width:70%;
+		text-align:center;
+	}
+	#sect {
+		background-color: #d7efff;
+		text-align:center;
+		margin: 20px;
+		padding: 20px;
+	}
+	
+	ul
+	{
+		list-style:none;
+		text-align:left;
+		background-color: #d7efff;
+		margin-left:20px; margin-right:20px;
+		padding-top:20px; padding-bottom:20px;
+	}
+	
+	
+	a{
+		text-align:center;
+		text-decoration: underline;
+		color: #000aa0;
+	}
+	table{
+		margin-left: auto;
+		margin-right: auto;
+		text-align:center;
+		width: 100%;
+		border: 2px solid #000000;
+		background-color:#d7efff
+	}
+	
+	th td{
+		font-size: 10pt;
+		border: 1px solid lightgray;
+		height: 30px;
+		padding: 5px;
+		color: #000000;
+		background-color: #EAF2D3;
+	}
+	img{
+		margin:15px;
+	}
+	#id {
+		margin-left: auto;
+		margin-right: 10px;
+		color:blue;
+		font-size: 12pt;
+		text-align:right;
+	}
+	#login{
+		padding:5px;
+		text-align : center;
+	}
+	@font-face {
+    font-family: 'BMJUA';
+    src: url('../font/BMJUA_ttf.ttf') format('truetype');
+	}
+	#loginMSG{
+		padding:5px;
+		font-size:15pt;
+		font-family:'BMJUA';
+	}
